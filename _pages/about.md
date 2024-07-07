@@ -2,24 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <strong> University of Colorado Boulder; </strong> <a href='https://www.colorado.edu/cs-theory/'>CU Boulder CS Theory</a>, <a href='https://www.colorado.edu/cs-theory/alg-econ'>Algorithmic Economics</a>, <a href='https://scholar.google.com/citations?user=lO0J2oMAAAAJ'>Google Scholar</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: adithya.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info: <center>Undergraduate Researcher</center>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an honors mathematics and computer science student at the University of Colorado Boulder. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am broadly interested in theoretical computer science and algorithmic economics. Currently, I am seeking to understand liquidity provisioning in automated market makers, with applications to prediction markets for Arrow-Debreu securities and decentralized exchanges. I would like to learn more about computational social choice and complexity theory.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+At this time, I hope for an academic career in theoretical computer science. I am an Undergraduate Researcher advised by Rafael Frongillo.
+
+I am not Aditya Bhaskara, Associate Professor of Computer Science at the University of Utah.

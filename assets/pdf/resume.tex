@@ -1,0 +1,257 @@
+
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography{resume.bib}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://officialadithya.github.io}{\LARGE ADITHYA BHASKARA}} & \textit{References available upon request.} \\
+  Boulder, CO & \href{mailto:adithya@colorado.edu}{adithya@colorado.edu}\\
+  \href{https://www.linkedin.com/in/adithya-bhaskara/}{linkedin.com/in/adithya-bhaskara/} & +1 (720) 600-9029 \\ & \href{https://scholar.google.com/citations?user=lO0J2oMAAAAJ}{Google Scholar}
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.colorado.edu}{University of Colorado Boulder}}{Boulder, Colorado}
+      {Bachelor of Science - Computer Science; Bachelor of Arts - Mathematics}{August, 2022 - May, 2026}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Data Structures, Linear Algebra, Algorithms, Theory of Computation, Computational Complexity, Linear and Integer Programming, Quantum Computing, Computer Systems, Principles of Programming Languages (In Progress), Real Analysis I, Abstract Algebra I}}}
+      {\scriptsize \textit{\footnotesize{\newline{}\textbf{Major GPA:} 4.000, \textbf{Cumulative GPA:} 3.986 }}}
+    \resumeSubheading
+      {\href{https://www.frontrange.edu}{Front Range Community College}}{Longmont, Colorado}
+      {High School Concurrent Enrollment}{June, 2021 - August, 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Calculus III, Differential Equations With Linear Algebra, Discrete Mathematics, Physics I, Physics II, Introduction to C++}}}
+      {\scriptsize \textit{\footnotesize{\newline{}\textbf{Cumulative GPA:} 4.000 }}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Computer Languages \& Tools}{~~~~~~Python, C++, Java*, Matlab*, Scala* \LaTeX, Docker*, HTML*, CSS*, JavaScript*}
+    \resumeSubItem{Human Languages}{~~~~~~~~~~~~~~~~~~~~~~~English, Kannada, French*}
+	\resumeSubItem{Soft Skills}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Teaching, Leadership, Communication} \\\vspace{8pt}
+    * \textit{Elementary Proficiency}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading{University of Colorado Boulder}{Boulder, CO}
+    {Theoretical Computer Science Undergraduate Researcher, Advised by Rafael Frongillo, Ph. D.}{May, 2023 - Present}
+
+    \begin{itemize}
+        \itemsep -1pt {}
+        \item Sought to understand optimal liquidity provisioning in decentralized exchanges and prediction markets.
+        \item Sought to understand aspects of liquidity provisioning from a contract design perspective and formulated a general theory for automated market makers, resulting in the paper:
+        \begin{itemize}
+          \item \bibentry{bhaskara2023general}
+        \end{itemize}
+        \item Developed basic understanding of topics in algorithmic game theory and computational social choice theory.
+        \item Active in the algorithmic economics reading group.
+    \end{itemize}
+    \resumeSubheading{University of Colorado Boulder}{Boulder, CO}
+    {CSCI 3104: Algorithms Learning Assistant}{January, 2024 - May, 2024}
+
+    \begin{itemize}
+        \itemsep -1pt {}
+        \item Met regularly with the Algorithms instructional team to prepare for the upcoming week of instruction and ensure student success.
+        \item Held regular office hours to help students with fundamental algorithms concepts including graph algorithms, the divide-and-conquer paradigm, dynamic programming, amortized analysis, and computational complexity theory.
+        \item Served as a resource for students to voice questions and concerns about Calculus I content.
+    \end{itemize}
+  \resumeSubheading{University of Colorado Boulder}{Boulder, CO}
+    {MATH 1300: Calculus I Learning Assistant}{January, 2023 - May, 2023}
+
+    \begin{itemize}
+        \itemsep -1pt {}
+        \item Co-led two weekly recitation sections of \(\approx 35\) students each for Calculus I with a graduate teaching assistant.
+        \item Met regularly with the Calculus I instructional team to prepare for the upcoming week of instruction and ensure student success.
+        \item Tutored students in the University of Colorado Boulder's Mathematics Academic Resource Center help room.
+        \item Served as a resource for students to voice questions and concerns about Calculus I content.
+    \end{itemize}
+%     \resumeSubheading{St. Vrain Valley Schools Innovation Center}{Longmont, CO}
+%     {Founding Member of the Cybersecurity Student Project Team}{August, 2019 - July, 2022}
+
+%     \begin{itemize}
+%         \itemsep -1pt {}
+%         \item Spearheaded effort to create middle school computer programming competition.
+%             \begin{itemize}
+%                 \item Served as competition administrator and lead problem author. Oversaw development of \(\approx 80\) problems.
+%                 \item Fielded \(13\) teams of \(2\) to \(4\) students per team in inaugural year.
+%             \end{itemize}
+%         \item Organized St. Vrain Valley Schools' participation, and competed, in the National CyberPatriot Competition (\(\approx 30\) competitors).
+%             \begin{itemize}
+%                 \item Led practices and presented on topics in Linux system administration.
+%                 \item Led own team to platinum tier of competition and semifinal rounds multiple times.
+%             \end{itemize}
+%         \item Taught introductory cybersecurity classes of \(\approx 25\) students and developed instructional materials; trained coworkers.
+%         \item Regularly presented to district and community leaders, including Governor Jared Polis, during board meetings and Innovation Center tours.
+%     \end{itemize}
+ \vspace{-5pt}
+    % \resumeSubheading
+		% {Silver Creek High School}{Longmont, CO}
+		% {Instructional Student Assistant Program Director}{August, 2021 -  May, 2022}
+		% \begin{itemize}
+    %         \itemsep -1pt {}
+    %         \item Served as head teaching assistant.
+    %         \item Created lessons and miscellaneous instructional materials, assisted students, and gave lectures for Algebra I, Algebra II, and Introductory Physics.
+    %         \item Oversaw \(7\) teaching assistants in Prealgebra, Geometry, Integrated English and History, United States History, and Personal Finance. Led monthly professional development meetings.
+    %     \end{itemize}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Honors, Awards, and Funding}
+\begin{description}[font=$\bullet$]
+\item {\href{https://boettcherfoundation.org}{Boettcher Scholarship (Full Ride \(\approx\$140,000\) Value) Awardee \hfill \textit{April, 2022}}}
+\vspace{-5pt}
+\item {\href{https://www.colorado.edu/cs-theory/alg-econ}{Algorithmic Economics NSF REU Grant (\(\approx\$8,000\) Value) Recipient\hfill \textit{May, 2023}}}
+\begin{itemize}
+  \item \footnotesize{Funded by Rafael Frongillo's NSF CAREER Award.}
+\end{itemize}
+\vspace{-5pt}
+\item {Marlene Massaro Pratto and David Pratto Scholarship in Mathematics (\(\$2,500\) Value) \hfill \textit{June, 2024}}
+\vspace{-5pt}
+\item {\href{https://cuengineeringhonors.com}{University of Colorado Boulder Engineering Honors Student \hfill \textit{February, 2022}}}
+\vspace{-5pt}
+\item {\href{https://www.nationalmerit.org}{National Merit Finalist \hfill \textit{February, 2022}}}
+\vspace{-5pt}
+\item {Colorado School of Mines Medal of Achievement in Mathematics and Science Awardee \hfill \textit{May, 2021}}
+\end{description}
+
+\section{Scholarly Service \& Additional Research Activity}
+\begin{description}[font=$\bullet$]
+\item Engineering Honors Program Admissions Executive Committee Member \hfill \textit{University of Colorado Boulder, 2024}
+\vspace{-5pt}
+\item \href{https://www.colorado.edu/boettcher-daniels-norlin-scholars/norlin-scholars}{Norlin Scholarship Admissions Reviewer} \hfill \textit{University of Colorado Boulder, 2023, 2024}
+\end{description}
+
+\begin{comment}
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Vison - multimedia search engine (NLP, Search Engine, Web Crawlers, Multimedia Processing)}{(Work in progress) Research oriented, open source, search engine for bringing reverse multimedia search to small \& mid scale enterprises. Tech: Python, NodeJS, Intel OpenVino Toolkit, Selenium, TensorFlow (October '18)}
+\vspace{2pt}
+\resumeSubItem{Reinforcement Learning based Traffic Control System (Reinforcement Learning, Computer Vision)}{AI model to resolve city traffic around 50\%
+faster. Tech: Python, Alibaba Cloud, Raspberry Pi, Arduino, SUMO \& OpenCV. (August '18)}
+\vspace{2pt}
+\resumeSubItem{Panorama from Satellite Imagery using Distributed Computing (Distributed Computing, Image Processing)}{Images clicked using drones, provided by ISRO were stitched together using distributed public compute nodes, effectively bringing down processing time exponentially. Tech: PHP, C++, Java, Python (March '18)}
+\vspace{2pt}
+\resumeSubItem{Drag-n-drop machine learning learning environment (Web Development, Machine Learning)}{Scratch like tool for implementing machine learning pipelines along with built in tutorial for each concept. Tech: Python, JavaScript (September '18)}
+\vspace{2pt}
+\resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Book: Deep Learning on Web (Web Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Django, Python, AWS, GCP, Azure (November '18)}
+\vspace{2pt}
+\resumeSubItem{Book: Deep Learning on Mobile Devices (Flutter App Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Flutter, Android, Firebase, TensorFlow, Python, Dart (December '18)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+\item {Awarded title of Intel Software Innovator - May, 2019}
+\vspace{-5pt}
+\item {Second Runner's Up at TCS EngiNx Engineering Project Innovation Content - September, 2018 }
+\vspace{-5pt}
+\item {Runner's Up at Facebook Developers Circle Hackathon - August, 2017}
+
+\end{description}
+
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
+    {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading
+    {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+    {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+
+\resumeSubHeadingListEnd
+\end{comment}
+\pagebreak
+\bibliographystyle{plain}
+\bibliography{resume.bib}
+\end{document}

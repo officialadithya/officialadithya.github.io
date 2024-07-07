@@ -11,3 +11,10 @@ assets/libs/
 node_modules/
 vendor
 .idea
+*.aux
+*.bbl
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

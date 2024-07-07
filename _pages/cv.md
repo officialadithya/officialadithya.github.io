@@ -1,11 +1,12 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: cv
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 1
+cv_pdf: resume.pdf
+description: Resume
 ---
+<object data="/assets/pdf/resume.pdf" type="application/pdf" width="100%" height="800px">
+  <p>It appears you don't have a PDF plugin for this browser. You can <a href="/assets/pdf/resume.pdf">click here to download the PDF file.</a></p>
+</object>

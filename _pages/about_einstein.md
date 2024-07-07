@@ -1,5 +1,5 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a mathematics and computer science undergraduate at the University of Colorado Boulder. I am broadly interested in theoretical computer science and algorithmic economics. I hope to learn more about computational social choice theory and computational complexity theory as well. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+At this time, I hope for an academic career in theoretical computer science. I am an Undergraduate Researcher advised by Rafael Frongillo.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am not Aditya Bhaskara, Associate Professor of Computer Science at the University of Utah.
