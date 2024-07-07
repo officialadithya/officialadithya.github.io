@@ -18,4 +18,3 @@ vendor
 *.log
 *.out
 *.synctex.gz
-Gemfile.lock
