@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'll be giving a talk at the Blockchain and Decentralized Finance workshop at EC'24.
+I'll be giving a talk at the Blockchain and Decentralized Finance workshop at EC'24 on {% cite bhaskara2023general %}, joint work with Rafael Frongillo and Maneesha Papireddygari.
