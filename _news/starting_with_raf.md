@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'll be starting at the algorithmic economics group at CU Boulder Theory, seeking to understand liquidity provisioning in automated market makers. I'll be advised by Rafael Frongillo.
+I'll be starting at the [algorithmic economics group](https://www.colorado.edu/cs-theory/alg-econ) at [CU Boulder Theory](https://www.colorado.edu/cs-theory/), seeking to understand liquidity provisioning in automated market makers. I'll be advised by [Rafael Frongillo](https://raf.prof).
