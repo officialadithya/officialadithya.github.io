@@ -27,6 +27,10 @@ nav_order: 3
 - High School Algebra I: Instructional Student Assistant. Fall, 2020
 - High School Algebra II: Instructional Student Assistant. Spring, 2020
 
+### **Course Materials**
+
+- [Course Notes for MATH 2135: Linear Algebra for Mathematics Majors at CU Boulder, Taught by Robin Deeley](/assets/pdf/course_materials/linearalgebra.pdf)
+
 ### **Textbook Recommendations**
 
 **Theory of Computation**
