@@ -303,7 +303,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["theory", "math", "computer science"] # these tags will be displayed on the front page of your blog
-display_categories: ["technical, non-technical"] # these categories will be displayed on the front page of your blog
+display_categories: ["technical", "non-technical"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
