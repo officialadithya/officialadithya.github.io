@@ -1,7 +1,7 @@
 "raf":
-  - firstname: ["Rafael", "R.", "R. M. F.", "Rafael M. Frongillo"]
+  - firstname: ["Rafael", "R.", "R. M. F.", "Rafael M. Frongillo", "Frongillo, Rafael M."]
     url: raf.prof
 
 "maneesha":
-  - firstname: ["Maneesha", "M.", "M. P.", "Maneesha Papireddygari"]
+  - firstname: ["Maneesha", "M.", "M. P.", "Maneesha Papireddygari, Papireddygari, Maneesha"]
     url: papireddygari.github.io
