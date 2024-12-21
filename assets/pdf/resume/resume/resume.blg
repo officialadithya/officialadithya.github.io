@@ -2,47 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: resume.aux
 The style file: plain.bst
-Database file #1: resume.bib
-Warning--empty journal in bhaskara2023general
+Database file #1: ../resume.bib
 You've used 1 entry,
             2118 wiz_defined-function locations,
-            501 strings with 4152 characters,
-and the built_in function-call counts, 292 in all, are:
-= -- 24
+            502 strings with 4186 characters,
+and the built_in function-call counts, 293 in all, are:
+= -- 25
 > -- 18
 < -- 0
 + -- 8
 - -- 6
 * -- 19
-:= -- 59
+:= -- 60
 add.period$ -- 3
 call.type$ -- 1
 change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 2
+cite$ -- 1
 duplicate$ -- 10
 empty$ -- 18
 format.name$ -- 6
-if$ -- 53
+if$ -- 54
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 1
 newline$ -- 8
 num.names$ -- 2
-pop$ -- 8
+pop$ -- 6
 preamble$ -- 1
 purify$ -- 5
 quote$ -- 0
 skip$ -- 7
 stack$ -- 0
 substring$ -- 6
-swap$ -- 0
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 4
-warning$ -- 1
+warning$ -- 0
 while$ -- 2
 width$ -- 2
-write$ -- 11
-(There was 1 warning)
+write$ -- 12
