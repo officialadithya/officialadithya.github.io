@@ -6,7 +6,7 @@ subtitle: <strong> University of Colorado Boulder; </strong> <a href='https://ww
 
 profile:
   align: right
-  image: adithya.jpg
+  image: adithya.heic
   image_circular: false # crops the image to make it circular
   more_info: <center>Undergraduate Researcher</center>
 
