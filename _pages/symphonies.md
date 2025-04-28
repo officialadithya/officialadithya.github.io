@@ -11,14 +11,14 @@ nav_order: 7
 1. **Mahler**. Symphony No. 2  
 1. **Beethoven**. Symphony No. 9  
 1. **Mahler**. Symphony No. 7  
-1. **Mahler**. Symphony No. 3  
 1. **Beethoven**. Symphony No. 3  
+1. **Mahler**. Symphony No. 3
+1. **Shostakovich**. Symphony No. 11
 1. **Mahler**. Symphony No. 6  
 1. **Mahler**. Symphony No. 9
 1. **Shostakovich**. Symphony No. 5  
 1. **Tchaikovsky**. Symphony No. 6  
 1. **Bruckner**. Symphony No. 8  
-1. **Shostakovich**. Symphony No. 11  
 1. **Mahler**. Symphony No. 1  
 1. **Sibelius**. Symphony No. 2  
 1. **Mahler**. Symphony No. 4  
