@@ -30,6 +30,7 @@ nav_order: 7
 1. **Tchaikovsky**. Symphony No. 4  
 1. **Dvorak**. Symphony No. 7  
 1. **Beethoven**. Symphony No. 6
+1. **Shostakovich**. Symphony No. 9
 1. **Mendelssohn**. Symphony No. 4  
 1. **Mozart**. Symphony No. 39
 1. **Mozart**. Symphony No. 40
