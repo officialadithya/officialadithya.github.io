@@ -17,11 +17,11 @@ social: true # includes social icons at the bottom of the page
 
 I am an honors mathematics, applied mathematics, and computer science student at the University of Colorado Boulder. 
 
-I am broadly interested in theoretical computer science, including algorithmic economics and matrix multiplication. In addition, I would like to learn more about computational social choice theory, complexity theory, and lattice theory.
+I am broadly interested in theoretical computer science, including algorithmic economics, computational social choice theory, fine-grained complexity, and error-correcting codes for matrix multiplication.
 
-Currently, I am seeking to understand liquidity provisioning in automated market makers, with applications to prediction markets for Arrow-Debreu securities and decentralized exchanges. I am also working on a project involving using techniques from coding theory to develop fast and efficient matrix multiplication verification algorithms.
+I am currently working to understand liquidity provisioning in automated market makers, with applications to prediction markets for Arrow-Debreu securities and decentralized exchanges. In addition, I am also working on a project involving using techniques from coding theory to develop fast and efficient matrix multiplication verification algorithms. 
 
 
-At this time, I hope for an academic career in theoretical computer science. I am an Undergraduate Researcher advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/).
+At this time, I hope for an academic career in theoretical computer science. I am an Undergraduate Researcher advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/). I will be applying to Ph. D. programs in Fall, 2025.
 
 I am not Aditya Bhaskara, Associate Professor of Computer Science at the University of Utah.
