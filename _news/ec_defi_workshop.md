@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'll be giving a talk at the Blockchain and Decentralized Finance workshop at [EC'24 at Yale School of Management](https://ec24.sigecom.org) on [Bhaskara et al. (2023)](/assets/pdf/talks/ec24-defi-workshop-liquidity.pdf), joint work with [Rafael Frongillo](https://raf.prof) and [Maneesha Papireddygari](https://papireddygari.github.io).
+I'll be giving a talk at the Blockchain and Decentralized Finance workshop at [EC'24](https://ec24.sigecom.org) at Yale on [Bhaskara et al. (2023)](/assets/pdf/talks/ec24-defi-workshop-liquidity.pdf), joint work with [Rafael Frongillo](https://raf.prof) and [Maneesha Papireddygari](https://papireddygari.github.io).
