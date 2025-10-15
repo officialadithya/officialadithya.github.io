@@ -15,12 +15,14 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an honors mathematics, applied mathematics, and computer science student at the University of Colorado Boulder. 
+I am an honors mathematics, applied mathematics, and computer science undergraduate researcher at the University of Colorado Boulder. I am primarily advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/).
 
-I am broadly interested in theoretical computer science, including algorithmic economics, computational social choice theory, fine-grained complexity, and error-correcting codes for matrix multiplication.
+I am broadly interested in theoretical computer science, including computational social choice theory, algorithmic economics, fine-grained complexity, and error-correcting codes for matrix multiplication.
 
-I am currently working to understand liquidity provisioning in automated market makers, with applications to prediction markets for Arrow-Debreu securities and decentralized exchanges. In addition, I am also working on a project involving using techniques from coding theory to develop fast and efficient matrix multiplication verification algorithms. 
+I am currently working on my undergraduate thesis in social choice theory, advised by [Bailey Flanigan](https://sites.google.com/mit.edu/bailey-flanigan/home). We hope to understand tradeoffs between different desiderata for the randomized selection of citizens' assemblies (sortition), especially in the context of alternate selection.
 
-At this time, I hope for an academic career in theoretical computer science. I am an Undergraduate Researcher advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/). I will be applying to computer science Ph. D. programs in Fall 2025, hoping to start in Fall 2026.
+Previously, I have worked to understand liquidity provisioning in automated market makers, with applications to prediction markets for Arrow-Debreu securities and decentralized exchanges. In addition, I have worked on a project involving using techniques from coding theory to develop fast and efficient matrix multiplication verification algorithms. 
+
+At this time, I hope for an academic career in theoretical computer science. I will be applying to computer science Ph. D. programs&mdash;primarily in computational social choice&mdash;in Fall 2025, hoping to start in Fall 2026.
 
 I am not Aditya Bhaskara, Associate Professor of Computer Science at the University of Utah.
