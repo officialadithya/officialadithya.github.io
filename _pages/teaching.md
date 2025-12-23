@@ -9,6 +9,8 @@ nav_order: 3
 
 ### **Teaching Experience**
 **University of Colorado Boulder**
+- Algorithms. Course Assistant. Fall, 2025.
+- Principles of Programming Languages. Course Assistant. Spring, 2025.
 - Algorithms. Course Assistant. Spring, 2024.
 - Calculus I. Learning Assistant. Spring, 2023.
 
@@ -47,13 +49,5 @@ nav_order: 3
 - Treil, S. (2017). Linear Algebra Done Wrong. Sergei Treil.
 - Axler, S. (2015). Linear Algebra Done Right (3rd ed.). Springer.
 
-**Differential Equations**
-- Tenenbaum, M., & Pollard, H. (1985). Ordinary Differential Equations. Dover Publications.
-- Braun, M. (1993). Differential Equations and Their Applications an Introduction to Applied Mathematics. Springer.
-
 **Discrete Mathematics**
 - Hammack, R. (2018). Book of Proof (3rd ed.). Richard Hammack.
-
-**Calculus**
-- Larson, R., & Edwards, B. (2022). Calculus (12th ed.). Cengage.
-- Stewart, J. (2010). Calculus -- Concepts and Contexts (4th ed.). Cengage.
