@@ -36,7 +36,7 @@ STOC had cool paper presentations as well! All the papers in the "Best Papers" t
 
 $$\textbf{TIME}[t(n)]\subseteq\textbf{SPACE}\left[\sqrt{t(n)\log t(n)}\right]$$
 
-for every function $$t(n)\geq n.$$ The best simulation bedfore Williams' result was discovered in 1975 by John E. Hopcroft, Wolfgang J. Paul, and Leslie G. Valiant. The talk was inspiring, and beyond the technical details presented, it had a good message. Williams urged other theorists not to be dissuaded by so-called barriers, and that often, we could break them if we just stare at the correct papers for a while, and believe in ourselves.
+for every function $$t(n)\geq n.$$ The best simulation before Williams' result was discovered in 1975 by John E. Hopcroft, Wolfgang J. Paul, and Leslie G. Valiant. The talk was inspiring, and beyond the technical details presented, it had a good message. Williams urged other theorists not to be dissuaded by so-called barriers, and that often, we could break them if we just stare at the correct papers for a while, and believe in ourselves.
 
 Beyond the "Best Papers" track, other talks I liked included
 1. [Kamesh Munagala](https://www.kameshmunagala.org)'s talk "Metric Distortion of Small-group Deliberation,"
