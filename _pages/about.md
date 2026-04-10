@@ -8,7 +8,7 @@ profile:
   align: right
   image: adithya.heic
   image_circular: false # crops the image to make it circular
-  more_info: <center>dith@mit.edu</center>
+  more_info: <center>abhaskara@mit.edu</center>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
