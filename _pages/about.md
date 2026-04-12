@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an honors mathematics and computer science undergraduate researcher at the University of Colorado Boulder. I am primarily advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/). I will start my Ph. D. in Fall 2026 at MIT EECS.
+I am an honors mathematics and computer science undergraduate researcher at the University of Colorado Boulder. I am primarily advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/). I will start my Ph. D. in Fall 2026 at MIT EECS, funded by the NSF Graduate Research Fellowship and the MIT EECS Great Educators Fellowship.
 
 My research interests are in theoretical computer science, primarily in computational social choice theory, mathematical democracy, politics, and algorithmic game theory. Often, I center my work at the intersection of theory and practice. I also have interests in algorithms and complexity. 
 
