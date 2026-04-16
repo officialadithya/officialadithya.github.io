@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm fortunate to be recognized as a 2026 NSF Graduate Research Fellow, and I'm very excited to pursue the research in my proposal titled "Candidates' Incentives & Voting Rules: Bridging the Gap Between Theory & Practice!"
+I'm fortunate to be recognized as a [2026 NSF Graduate Research Fellow](https://www.colorado.edu/cs/four-cs-students-earn-major-national-science-foundation-fellowships), and I'm very excited to pursue the research in my proposal titled "Candidates' Incentives & Voting Rules: Bridging the Gap Between Theory & Practice!"
