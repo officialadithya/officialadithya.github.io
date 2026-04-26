@@ -109,7 +109,7 @@ x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
-contact_note: Please contact me by email, re.sub("[ay]", "", first_name) + "@mit.edu" for all important matters. # You can even add a little note about which of these is the best way to reach you.
+contact_note: Please contact me by email, abhaskara@mit.edu, for all important matters. # You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

@@ -14,7 +14,7 @@ nav_order: 3
 - Algorithms. Course Assistant. Spring, 2024.
 - Calculus I. Learning Assistant. Spring, 2023.
 
-**Innovation Center of St. Vrain Valley Schools (Grades 6-12)**
+<!-- **Innovation Center of St. Vrain Valley Schools (Grades 6-12)**
 - Advanced Cybersecurity with Python Programming: Instructor. Summer, 2023. (7 Hours/Day, for 5 Days).
 - Fundamentals of Cybersecurity: Instructor. Summer, 2022. (7 Hours/Day, for 5 Days).
 - Fundamentals of Cybersecurity: Instructor. Summer, 2021. (7 Hours/Day, for 5 Days).
@@ -27,7 +27,7 @@ nav_order: 3
 - College-Preparatory Physics: Instructional Student Assistant. Spring, 2022.
 - College-Preparatory Physics: Instructional Student Assistant. Fall, 2021.
 - High School Algebra I: Instructional Student Assistant. Fall, 2020
-- High School Algebra II: Instructional Student Assistant. Spring, 2020
+- High School Algebra II: Instructional Student Assistant. Spring, 2020 -->
 
 ### **Course Materials**
 
