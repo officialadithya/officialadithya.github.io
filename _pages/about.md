@@ -15,10 +15,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an honors mathematics and computer science undergraduate researcher at the University of Colorado Boulder. I am primarily advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/). I will start my Ph. D. in Fall 2026 at MIT EECS, funded by the NSF Graduate Research Fellowship and the MIT EECS Great Educators Fellowship.
+I am a(n incoming) Ph. D. student at MIT EECS. My research interests are in theoretical computer science, primarily in computational social choice theory, mathematical democracy, politics, and algorithmic game theory. I like to center my work at the intersection of theory and practice. I also have interests in algorithms and complexity. 
 
-My research interests are in theoretical computer science, primarily in computational social choice theory, mathematical democracy, politics, and algorithmic game theory. Often, I center my work at the intersection of theory and practice. I also have interests in algorithms and complexity. 
+I am very fortunate to be advised by [Bailey Flanigan](https://sites.google.com/mit.edu/bailey-flanigan/home), and I am funded by the NSF Graduate Research Fellowship and the MIT EECS Great Educators Fellowship.
 
-I am currently working on my undergraduate thesis in social choice theory, advised by [Bailey Flanigan](https://sites.google.com/mit.edu/bailey-flanigan/home). We hope to understand tradeoffs between different desiderata for the randomized selection of citizens' assemblies (sortition), especially in the context of alternate selection and manipulation.
+Previously, I completed my undergraduate studies in mathematics and computer science on a Boettcher Scholarship at the University of Colorado Boulder. There, I was advised by [Rafael Frongillo](https://raf.prof) and [Huck Bennett](https://home.cs.colorado.edu/~hbennett/). My senior thesis was advised by [Bailey Flanigan](https://sites.google.com/mit.edu/bailey-flanigan/home) and titled "In Randomness we Trust: Tradeoffs in Sortition."
+
+If you have classical music suggestions for me, please email [mahler@mit.edu](mailto:mahler@mit.edu).
 
 I am not Aditya Bhaskara, Associate Professor of Computer Science at the University of Utah.
