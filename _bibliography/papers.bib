@@ -1,22 +1,16 @@
-@article{bhaskara2025general,
-      title={A General Theory of Liquidity Provisioning for Prediction Markets}, 
-      author={Bhaskara, Adithya and Frongillo, Rafael M. and Papireddygari, Maneesha},
-      year={2025},
-      eprint={2311.08725},
-      archivePrefix={arXiv},
-      primaryClass={cs.GT},
-      arxiv={2311.08725},
-      journal={arXiv preprint arXiv:2311.08725},
-      abstract={
-      In Decentralized Finance (DeFi), automated market makers typically implement liquidity provisioning protocols. These protocols allow third-party liquidity providers (LPs) to provide assets to facilitate trade in exchange for fees. This paper introduces a general framework for liquidity provisioning for cost-function prediction markets with any finite set of securities. Our framework is based on the idea of running several market makers "in parallel"; we show formally that several notions of parallel market making are equivalent to ours. The most general protocol therefore allows LPs to submit an arbitrary cost function, which specifies their liquidity over the entire price space, and determines the deposit required. We justify the need for this flexibility by demonstrating the inherent high dimensionality of liquidity. We also give several restricted protocols which are more computationally feasible.
-
-      Furthermore, we show that our protocol recovers several existing DeFi protocols in the 2-asset case. Our work also contributes to the DeFi literature by giving a fully expressive protocol for any number of assets.
-      },
-      URL={https://arxiv.org/abs/2311.08725},
-      pdf={https://officialadithya.github.io/assets/pdf/papers/bfp25_liquidity.pdf},
-      slides={talks/ec24-defi-workshop-liquidity.pdf},
-      video={https://www.youtube.com/watch?v=JWsXMNSOygA},
-      bibtex_show={True},
-      selected={true},
-      note={The slides and video links are for an older version of the paper, presented at the Workshop on Blockchains and Decentralized Finance at EC'24.}
+@inproceedings{bhaskara2026general,
+  title        = {A General Theory of Liquidity Provisioning for Prediction Markets},
+  author       = {Bhaskara, Adithya and Lindgren, Elias and Frongillo, Rafael M. and Papireddygari, Maneesha},
+  booktitle    = {{Proceedings of the 27th ACM Conference on Economics and Computation, to appear}},
+  series       = {EC'26},
+  year         = {2026},
+  location     = {Rome, Italy},
+  publisher    = {Association for Computing Machinery},
+  address      = {New York, NY, USA},
+  abstract     = {Liquidity provisioning in automated market makers is the practice of recruiting third-party liquidity providers (LPs) to contribute assets to the market in exchange for fees skimmed off of trades. This paper introduces a general framework for liquidity provisioning in cost-function prediction markets. Our most general protocol allows LPs to submit or update an arbitrary cost function that specifies their liquidity over the entire price space. We show that our protocol encapsulates several notions of running market makers in parallel, which we prove to be equivalent. We also recover existing protocols from decentralized finance as special cases. In our protocol, liquidity can be expressed as a matrix-valued function, which we argue is necessary with three or more securities. Due to this inherent multidimensionality, the design of trading fees with more than three securities is nontrivial: we show that natural axioms on the design of these fees are incompatible.},
+  bibtex_show  = {true},
+  selected     = {true},
+  pdf          = {papers/bfp25_liquidity.pdf},
+  arxiv        = {2311.08725},
+  note         = {PDF and arXiv links are for a previous version of the paper.}
 }
