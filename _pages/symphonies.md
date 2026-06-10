@@ -5,7 +5,7 @@ title: symphonies
 description: 
     I love classical music, especially symphonic works. I have a preference towards works composed in the late-classical or romantic eras, but really I enjoy anything! Here, I provide a loose ranking of symphonies of which I have a good familiarity with. Please feel to email me any recommendations, at mahler@mit.edu!
 nav: true
-nav_order: 7 
+nav_order: 8
 ---
 
 1. **Mahler**. Symphony No. 2  

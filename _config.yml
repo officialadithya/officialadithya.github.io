@@ -138,6 +138,8 @@ lsi: false # produce an index for related posts
 # Pagination
 pagination:
   enabled: true
+  indexing: false
+
 
 related_blog_posts:
   enabled: false
@@ -195,6 +197,12 @@ collections:
   projects:
     output: false
     permalink: /projects/:path/
+  posts:
+    output: true
+    permalink: /blog/:year/:title/
+  law_blog:
+    output: true
+    permalink: /law_blog/:year/:title/
 
 announcements:
   enabled: true
@@ -276,6 +284,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:                       
+      path: ""
+      type: law_blog
+    values:
+      layout: post
 
 sass:
   style: compressed
@@ -294,7 +307,7 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: [year, tags, categories]
   layouts:
     year: archive-year
     tag: archive-tag
@@ -304,9 +317,21 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
+law_blog-archives:
+  enabled: [year, tags, categories]
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: "/law_blog/:year/"
+    tag: "/law_blog/tag/:name/"
+    category: "/law_blog/category/:name/"
+
 display_tags: ["theory", "math", "computer science"] # these tags will be displayed on the front page of your blog
 display_categories: ["technical", "non-technical"] # these categories will be displayed on the front page of your blog
-
+law_blog_display_tags: ["law", "politics", "democracy"]
+law_blog_display_categories: ["non-technical"]
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
