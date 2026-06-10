@@ -1,7 +1,7 @@
 ---
 layout: post
 title: introducing "animus curiae"
-date: 2025-06-01 00:00:00
+date: 2026-06-01 00:00:00
 description: my blog on law, the courts, politics, and democracy
 tags: [law, politics, democracy]
 categories: [non-technical]

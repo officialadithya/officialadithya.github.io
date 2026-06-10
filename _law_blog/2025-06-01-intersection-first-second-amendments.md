@@ -1,7 +1,7 @@
 ---
 layout: post
 title: on the intersection of the First and Second Amendments after Bruen
-date: 2025-06-10 00:00:00
+date: 2026-06-10 00:00:00
 description: 
 tags: [law]
 categories: [non-technical]
