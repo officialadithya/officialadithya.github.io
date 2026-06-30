@@ -1,6 +1,6 @@
 ---
 layout: post
-title: on the intersection of the First and Second Amendments after Bruen
+title: On the Intersection of the First and Second Amendments after Bruen
 date: 2026-06-10 00:00:00
 description: 
 tags: [law]
