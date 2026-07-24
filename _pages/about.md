@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <strong> University of Colorado Boulder; </strong> <a href='https://www.colorado.edu/cs-theory/'>CU Boulder CS Theory</a>, <a href='https://www.colorado.edu/cs-theory/alg-econ'>Algorithmic Economics</a>, <a href='https://scholar.google.com/citations?user=lO0J2oMAAAAJ'>Google Scholar</a>
+subtitle: <strong> University of Colorado Boulder; </strong> <a href='https://www.colorado.edu/cs-theory/'>CU Boulder CS Theory</a>, <a href='https://www.colorado.edu/cs-theory/alg-econ'>Algorithmic Economics</a>, <a href='https://scholar.google.com/citations?user=enRE_GgAAAAJ'>Google Scholar</a>
 
 profile:
   align: right
