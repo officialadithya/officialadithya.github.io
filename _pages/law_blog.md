@@ -3,7 +3,7 @@ layout: default
 permalink: /law_blog/
 title: law blog
 nav: true
-nav_order: 7
+nav_order: 8
 pagination:
   enabled: true
   collection: law_blog
