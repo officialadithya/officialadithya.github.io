@@ -253,10 +253,10 @@ dl.axl dd{margin:1px 0 0;font-size:14px;color:var(--ink-2)}
   <div class="panel" id="legendpanel">
     <h2>Reading a row</h2>
     <div class="legend">
-      <div><span class="swatch hit">✓</span><span><b>Green</b> — your rule matches the target on this property.</span></div>
-      <div><span class="swatch miss">✗</span><span><b>Grey</b> — they differ here.</span></div>
-      <div><span class="swatch up">↑</span><span><b>Blue</b> — the target is <i>harder</i> to compute than your guess.</span></div>
-      <div><span class="swatch down">↓</span><span><b>Amber</b> — the target is <i>easier</i> to compute.</span></div>
+      <div><span class="swatch hit">&#x2713;</span><span><b>Green</b> &#x2014; your rule matches the target on this property.</span></div>
+      <div><span class="swatch miss">&#x2717;</span><span><b>Grey</b> &#x2014; they differ here.</span></div>
+      <div><span class="swatch up">&#x2191;</span><span><b>Blue</b> &#x2014; the target is <i>harder</i> to compute than your guess.</span></div>
+      <div><span class="swatch down">&#x2193;</span><span><b>Amber</b> &#x2014; the target is <i>easier</i> to compute.</span></div>
     </div>
   </div>
 
@@ -308,7 +308,7 @@ function evaluate(gid,tid){
   return out;
 }
 const VLABEL={Y:"Satisfies",N:"Fails","?":"Open"};
-const VGLYPH={Y:"✓",N:"✗","?":"—"};
+const VGLYPH={Y:"\u2713",N:"\u2717","?":"\u2014"};
 
 /* ---------- render ---------- */
 function headerRow(){
@@ -318,7 +318,7 @@ function headerRow(){
 }
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function cellHTML(rid,key,res,val,glyph){
-  const arrow=res==="up"?"↑":res==="down"?"↓":"";
+  const arrow=res==="up"?"\u2191":res==="down"?"\u2193":"";
   const g=glyph!==undefined?glyph:(arrow||"");
   return `<td><button class="cell ${res}" data-rule="${rid}" data-key="${key}">
     ${g?`<span class="glyph">${g}</span>`:""}<span class="val">${esc(val)}</span></button></td>`;
@@ -330,8 +330,8 @@ function renderGrid(){
     const fb=evaluate(gid,G.target),r=byId[gid];
     const solved=gid===G.target;
     let tds=`<td class="namecol">${esc(r.name)}<div class="meta">${esc(r.aliases[0])}</div></td>`;
-    tds+=cellHTML(gid,"family",fb[0].res,fb[0].val,fb[0].res==="hit"?"✓":"✗");
-    tds+=cellHTML(gid,"complexity",fb[1].res,fb[1].val,fb[1].res==="hit"?"✓":undefined);
+    tds+=cellHTML(gid,"family",fb[0].res,fb[0].val,fb[0].res==="hit"?"\u2713":"\u2717");
+    tds+=cellHTML(gid,"complexity",fb[1].res,fb[1].val,fb[1].res==="hit"?"\u2713":undefined);
     fb.slice(2).forEach((f,j)=>{tds+=cellHTML(gid,AX[j].id,f.res,VLABEL[f.val],VGLYPH[f.val]);});
     const isLast=i===G.guesses.length-1;
     return `<tr class="${solved?"solved":""} ${isLast?"enter":""}">${tds}</tr>`;
@@ -350,7 +350,7 @@ function renderMsg(){
       <button class="btn" style="margin-left:8px" id="btn-share">Copy result</button>
       ${mode==="practice"?'<button class="btn" style="margin-left:6px" id="btn-again">New rule</button>':""}</div>`;
   }else if(G.status==="lost"){
-    el.innerHTML=`<div class="msg">Out of guesses — it was <b>${esc(byId[G.target].name)}</b>.
+    el.innerHTML=`<div class="msg">Out of guesses \u2014 it was <b>${esc(byId[G.target].name)}</b>.
       <button class="btn" style="margin-left:8px" id="btn-share">Copy result</button>
       ${mode==="practice"?'<button class="btn" style="margin-left:6px" id="btn-again">New rule</button>':""}</div>`;
   }else el.innerHTML="";
@@ -359,11 +359,11 @@ function renderMsg(){
 }
 function share(){
   const G=game();
-  const emo={hit:"🟩",miss:"⬜",up:"🟦",down:"🟨"};
+  const emo={hit:"\ud83d\udfe9",miss:"\u2b1c",up:"\ud83d\udfe6",down:"\ud83d\udfe8"};
   const head=`Voterdle ${mode==="daily"?todayKey():"practice"} ${G.status==="won"?G.guesses.length:"X"}/${MAXG}`;
   const body=G.guesses.map(g=>evaluate(g,G.target).map(f=>emo[f.res]).join("")).join("\n");
   const txt=head+"\n"+body;
-  navigator.clipboard?.writeText(txt);
+  if(navigator.clipboard) navigator.clipboard.writeText(txt);
   openModal(`<div class="eyebrow">Result</div><h2>${esc(head)}</h2>
     <p class="proof" style="margin:8px 0 12px">Copied to your clipboard.</p>
     <div class="share">${esc(body)}</div>`);
@@ -484,7 +484,7 @@ const inp=document.getElementById("guess"),sugBox=document.getElementById("sugge
 function drawSug(){
   sugBox.innerHTML=sugList.map((r,i)=>
     `<div class="sug" data-id="${r.id}" data-active="${i===sugIdx}">
-       <span class="nm">${esc(r.name)}</span><span class="mt">${esc(r.family)} · ${esc(r.complexity)}</span></div>`).join("");
+       <span class="nm">${esc(r.name)}</span><span class="mt">${esc(r.family)} \u00b7 ${esc(r.complexity)}</span></div>`).join("");
 }
 inp.addEventListener("input",()=>{sugList=suggestions(inp.value);sugIdx=sugList.length?0:-1;drawSug();});
 inp.addEventListener("keydown",e=>{
@@ -499,7 +499,7 @@ function submit(){
   const G=game(); if(G.status!=="playing")return;
   const q=inp.value.trim(); if(!q)return;
   let pick=sugIdx>=0&&sugList[sugIdx]?sugList[sugIdx]:suggestions(q)[0];
-  if(!pick){flash(`No social choice function matches “${q}”.`);return;}
+  if(!pick){flash(`No social choice function matches \u201c${q}\u201d.`);return;}
   if(G.guesses.includes(pick.id)){flash(`You already guessed ${pick.name}.`);return;}
   G.guesses.push(pick.id);
   if(pick.id===G.target)G.status="won";
@@ -524,7 +524,7 @@ function renderReference(){
   document.getElementById("reference").innerHTML=
     `<div class="panel" style="margin-bottom:14px"><h2>The full table</h2>
       <p>Every entry below is backed by evidence you can open: a proof, a cited theorem, or a concrete
-      counterexample profile. This is the answer key — it will spoil the daily puzzle.</p></div>
+      counterexample profile. This is the answer key \u2014 it will spoil the daily puzzle.</p></div>
      <div class="gridwrap"><table>
        <thead>${head}</thead><tbody>${rows}</tbody></table></div>`;
 }
@@ -538,7 +538,7 @@ document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
   document.getElementById("reference").hidden=!isRef;
   document.getElementById("legendpanel").hidden=isRef;
   document.getElementById("subtitle").textContent=isRef?"The evidence behind every entry"
-    :(m==="daily"?"Guess the voting rule · six tries":"Practice · a new rule every round");
+    :(m==="daily"?"Guess the voting rule \u00b7 six tries":"Practice \u00b7 a new rule every round");
   if(isRef){renderReference();return;}
   mode=m;renderGrid();
 });
@@ -549,31 +549,31 @@ document.getElementById("btn-how").onclick=()=>openModal(
    <p class="proof">A social choice function takes a profile of ranked ballots and returns a winner.
    One of the ${RULES.length} rules below is today's answer; you have six guesses.</p>
    <p class="proof">Each guess is scored column by column. Green means your rule and the target agree on that
-   property — both satisfy it, or both fail it. Grey means they differ. The complexity column also points:
+   property \u2014 both satisfy it, or both fail it. Grey means they differ. The complexity column also points:
    blue if the target is harder to compute than your guess, amber if it is easier.</p>
    <h3 style="font-family:Archivo;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 8px">The properties</h3>
    <dl class="axl">`+AX.map(a=>`<div><dt>${esc(a.label)}</dt><dd>${esc(a.desc)}</dd></div>`).join("")+`</dl>
-   <p class="proof" style="margin-top:14px">Click any cell — in your guesses or in the Reference tab — to see the
+   <p class="proof" style="margin-top:14px">Click any cell \u2014 in your guesses or in the Reference tab \u2014 to see the
    proof or the counterexample behind it.</p>`);
 
 document.getElementById("btn-about").onclick=()=>openModal(
   `<div class="eyebrow">Sources and method</div><h2>Where every entry comes from</h2>
    <p class="proof">Nothing in this table is asserted on authority. Each cell carries one of three kinds of evidence:</p>
-   <p class="proof"><b>A counterexample.</b> Every rule here is implemented in code, and the “fails” cells were
+   <p class="proof"><b>A counterexample.</b> Every rule here is implemented in code, and the \u201cfails\u201d cells were
    established by exhaustively searching small profiles for a violation. The instance shown is the one the search
    returned. Counterexamples are only accepted when every winner set involved is a singleton, so no violation
    can be blamed on a tie-breaking convention.</p>
-   <p class="proof"><b>A constructed instance.</b> A few failures have no small witness — two-round runoff needs
+   <p class="proof"><b>A constructed instance.</b> A few failures have no small witness \u2014 two-round runoff needs
    17 voters before raising the winner can defeat it. Those were derived by hand and then re-verified against the
    same implementations.</p>
-   <p class="proof"><b>A proof or a cited theorem.</b> “Satisfies” cells cannot be settled by search, so each one
+   <p class="proof"><b>A proof or a cited theorem.</b> \u201cSatisfies\u201d cells cannot be settled by search, so each one
    states its argument. Two classical impossibility results do a lot of work: Moulin's theorem that no
    Condorcet-consistent rule satisfies participation, and Young's characterisation of the consistent rules as
    exactly the positional scoring rules.</p>
    <h3 style="font-family:Archivo;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 8px">Conventions</h3>
    <p class="proof">Rules are treated as irresolute: ties return the whole tied set, and elimination rules branch
    over every tie-break and return the union, so a single-winner result means that candidate wins under every
-   tie-break. Pareto is read on the choice set — a rule fails if a Pareto-dominated candidate is ever selected,
+   tie-break. Pareto is read on the choice set \u2014 a rule fails if a Pareto-dominated candidate is ever selected,
    even in a tie. Minimax uses margins. Sequential pairwise uses a fixed agenda, which is part of the rule.</p>
    <p class="proof">The roster is restricted to genuine social choice functions: ordinal ballots in, winner out.
    Approval, Score and Majority Judgment take cardinal ballots and are excluded on that ground.</p>`);
@@ -604,7 +604,7 @@ document.getElementById("btn-theme").onclick=()=>{
 document.querySelector("#grid thead").innerHTML=headerRow();
 renderGrid();
 document.getElementById("footer").innerHTML=
-  `${RULES.length} Social Choice Functions · Built with the assistance of Claude Code · Report errors to abhaskara@mit.edu`;
+  `${RULES.length} Social Choice Functions \u00b7 Built with the assistance of Claude Code \u00b7 Report Errors to abhaskara@mit.edu`;
 </script>
 </body>
 </html>{% endraw %}
