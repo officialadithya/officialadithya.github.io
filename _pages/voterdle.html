@@ -195,6 +195,11 @@ dl.axl dd{margin:1px 0 0;font-size:14px;color:var(--ink-2)}
   text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
 .foot{font-size:12.5px;color:var(--ink-3);text-align:center;line-height:1.7}
 .foot a{color:var(--brand)}
+.share-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;align-items:center}
+.share-actions .btn{display:inline-flex;align-items:center;gap:7px}
+.share-actions a.btn{text-decoration:none}
+.share-actions .ico{font-size:13px;line-height:1}
+.share-note{font-size:13px;color:var(--ink-3);margin:10px 0 0;min-height:19px}
 .share{font-family:"IBM Plex Mono",monospace;font-size:15px;line-height:1.35;background:var(--paper);
   border:1px solid var(--rule-2);padding:11px;border-radius:2px;white-space:pre;overflow-x:auto}
 @media (prefers-reduced-motion:no-preference){
@@ -349,26 +354,58 @@ function renderMsg(){
   const G=game(),el=document.getElementById("msg");
   if(G.status==="won"){
     el.innerHTML=`<div class="msg win"><b>${esc(byId[G.target].name)}</b> in ${G.guesses.length}.
-      <button class="btn" style="margin-left:8px" id="btn-share">Copy result</button>
+      <button class="btn" style="margin-left:8px" id="btn-share">Share result</button>
       ${mode==="practice"?'<button class="btn" style="margin-left:6px" id="btn-again">New rule</button>':""}</div>`;
   }else if(G.status==="lost"){
     el.innerHTML=`<div class="msg">Out of guesses \u2014 it was <b>${esc(byId[G.target].name)}</b>.
-      <button class="btn" style="margin-left:8px" id="btn-share">Copy result</button>
+      <button class="btn" style="margin-left:8px" id="btn-share">Share result</button>
       ${mode==="practice"?'<button class="btn" style="margin-left:6px" id="btn-again">New rule</button>':""}</div>`;
   }else el.innerHTML="";
   const s=document.getElementById("btn-share"); if(s)s.onclick=share;
   const a=document.getElementById("btn-again"); if(a)a.onclick=()=>{games.practice=newGame("practice");store.save("practice",games.practice);renderGrid();};
 }
-function share(){
+const SHARE_URL="https://officialadithya.github.io/voterdle/";
+function shareText(){
   const G=game();
   const emo={hit:"\ud83d\udfe9",miss:"\u2b1c",up:"\ud83d\udfe6",down:"\ud83d\udfe8"};
   const head=`Voterdle ${mode==="daily"?todayKey():"practice"} ${G.status==="won"?G.guesses.length:"X"}/${MAXG}`;
   const body=G.guesses.map(g=>evaluate(g,G.target).map(f=>emo[f.res]).join("")).join("\n");
-  const txt=head+"\n"+body;
-  if(navigator.clipboard) navigator.clipboard.writeText(txt);
-  openModal(`<div class="eyebrow">Result</div><h2>${esc(head)}</h2>
-    <p class="proof" style="margin:8px 0 12px">Copied to your clipboard.</p>
-    <div class="share">${esc(body)}</div>`);
+  return {head:head, body:body, full:head+"\n"+body+"\n"+SHARE_URL};
+}
+function share(){
+  const S=shareText(), enc=encodeURIComponent(S.full);
+  const bsky="https://bsky.app/intent/compose?text="+enc;
+  const x="https://twitter.com/intent/tweet?text="+enc;
+  const native=(typeof navigator!=="undefined"&&navigator.share)
+    ? '<button class="btn" id="sh-native"><span class="ico">\u21aa</span>More\u2026</button>' : "";
+  openModal(`<div class="eyebrow">Result</div><h2>${esc(S.head)}</h2>
+    <div class="share">${esc(S.body)}</div>
+    <div class="share-actions">
+      <button class="btn primary" id="sh-copy">Copy text</button>
+      <a class="btn" id="sh-bsky" href="${esc(bsky)}" target="_blank" rel="noopener noreferrer"><span class="ico">\u25c8</span>Bluesky</a>
+      <a class="btn" id="sh-x" href="${esc(x)}" target="_blank" rel="noopener noreferrer"><span class="ico">\u2715</span>X</a>
+      ${native}
+    </div>
+    <p class="share-note" id="sh-note" role="status" aria-live="polite"></p>`);
+  const note=document.getElementById("sh-note");
+  document.getElementById("sh-copy").onclick=()=>{
+    const done=()=>{note.textContent="Copied \u2014 paste it anywhere.";};
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(S.full).then(done,()=>fallbackCopy(S.full,note));
+    } else fallbackCopy(S.full,note);
+  };
+  const nb=document.getElementById("sh-native");
+  if(nb) nb.onclick=()=>{navigator.share({text:S.full}).catch(()=>{});};
+}
+function fallbackCopy(txt,note){
+  try{
+    const ta=document.createElement("textarea");
+    ta.value=txt; ta.setAttribute("readonly","");
+    ta.style.position="fixed"; ta.style.top="-1000px";
+    document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); document.body.removeChild(ta);
+    note.textContent="Copied \u2014 paste it anywhere.";
+  }catch(e){ note.textContent="Couldn\u2019t copy automatically \u2014 select the grid above and copy it."; }
 }
 
 /* ---------- evidence drawer ---------- */
@@ -606,7 +643,7 @@ document.getElementById("btn-theme").onclick=()=>{
 document.querySelector("#grid thead").innerHTML=headerRow();
 renderGrid();
 document.getElementById("footer").innerHTML=
-  `${RULES.length} Social Choice Functions \u00b7 Built with the assistance of Claude Code \u00b7 Report Errors to abhaskara@mit.edu`;
+  `${RULES.length} Social Choice Functions \u00b7 Built with the assistance of Claude Code \u00b7 Report errors to abhaskara@mit.edu`;
 </script>
 </body>
 </html>{% endraw %}
