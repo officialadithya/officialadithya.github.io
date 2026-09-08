@@ -618,10 +618,13 @@ document.getElementById("btn-about").onclick=()=>openModal(
    Approval, Score and Majority Judgment take cardinal ballots and are excluded on that ground.</p>`);
 
 /* ---------- colour theme ---------- */
-const THEME_KEY="voterdle:theme", THEMES=["auto","light","dark"];
+const THEME_KEY="theme", THEMES=["auto","light","dark"];
+/* al-folio writes "system" where this page says "auto" */
+const toStore=t=>t==="auto"?"system":t;
+const fromStore=t=>t==="system"?"auto":t;
 const THEME_ICON={auto:"\u25D0",light:"\u25CB",dark:"\u25CF"};
 const THEME_NAME={auto:"Auto",light:"Light",dark:"Dark"};
-function readTheme(){try{const t=localStorage.getItem(THEME_KEY);return THEMES.includes(t)?t:"auto";}catch(e){return "auto";}}
+function readTheme(){try{const t=fromStore(localStorage.getItem(THEME_KEY));return THEMES.includes(t)?t:"auto";}catch(e){return "auto";}}
 function applyTheme(t){
   const root=document.documentElement;
   if(t==="auto") root.removeAttribute("data-theme"); else root.setAttribute("data-theme",t);
@@ -633,9 +636,10 @@ function applyTheme(t){
 }
 let theme=readTheme();
 applyTheme(theme);
+try{document.documentElement.setAttribute("data-theme-setting",toStore(theme));}catch(e){}
 document.getElementById("btn-theme").onclick=()=>{
   theme=THEMES[(THEMES.indexOf(theme)+1)%THEMES.length];
-  try{localStorage.setItem(THEME_KEY,theme);}catch(e){}
+  try{localStorage.setItem(THEME_KEY,toStore(theme));document.documentElement.setAttribute("data-theme-setting",toStore(theme));}catch(e){}
   applyTheme(theme);
 };
 
