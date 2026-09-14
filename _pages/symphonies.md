@@ -27,12 +27,15 @@ nav_order: 9
 1. **Copland**. Symphony No. 3
 1. **Shostakovich**. Symphony No. 10
 1. **Beethoven**. Symphony No. 7
-1. **Mahler**. Symphony No. 5  
 1. **Dvorak**. Symphony No. 9  
-1. **Tchaikovsky**. Symphony No. 4 
 1. **Rachmaninoff**. Symphony No. 2 
+1. **Brahms**. Symphony No. 4  
+1. **Mahler**. Symphony No. 5  
+1. **Tchaikovsky**. Symphony No. 4 
 1. **Dvorak**. Symphony No. 7  
+1. **Brahms**. Symphony No. 3
 1. **Beethoven**. Symphony No. 6
+1. **Mahler**. Das Lied von der Erde
 1. **Shostakovich**. Symphony No. 9
 1. **Mendelssohn**. Symphony No. 4  
 1. **Mozart**. Symphony No. 39
