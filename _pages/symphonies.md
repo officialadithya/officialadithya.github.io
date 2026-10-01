@@ -27,6 +27,7 @@ nav_order: 9
 1. **Sibelius**. Symphony No. 2  
 1. **Copland**. Symphony No. 3
 1. **Shostakovich**. Symphony No. 10
+1. **Prokoviev**. Symphony No. 6
 1. **Beethoven**. Symphony No. 7
 1. **Dvorak**. Symphony No. 9  
 1. **Rachmaninoff**. Symphony No. 2 
