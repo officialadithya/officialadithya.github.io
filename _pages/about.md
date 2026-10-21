@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Ph. D. student at MIT EECS. My research interests are in theoretical computer science, primarily in computational social choice theory, mathematical democracy, politics, and algorithmic game theory. I like to center my work at the intersection of theory and practice. I also have interests in algorithms and complexity. 
+I am a Ph. D. student at MIT EECS. My research interests are in theoretical computer science, primarily in computational social choice theory, mathematical democracy, politics, AI safety, and more broadly, algorithmic game theory. I like to center my work at the intersection of theory and practice. I also have interests in algorithms and complexity. 
 
 I am very fortunate to be advised by [Bailey Flanigan](https://sites.google.com/mit.edu/bailey-flanigan/home), and I am supported by the NSF Graduate Research Fellowship and the MIT EECS Great Educators Fellowship.
 
