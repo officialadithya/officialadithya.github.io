@@ -48,3 +48,5 @@ nav_order: 9
 1. **Haydn**. Symphony No. 96
 1. **Mozart**. Symphony No. 25
 1. **Haydn**. Symphony No. 94
+
+While not a symphony, I've sung Carl Orff's Carmina Burana as a Bass with the MIT Concert Choir and the MIT Symphony Orchestra. See the recording [here](https://youtu.be/1PUM8MurbG4)!
